@@ -22,8 +22,8 @@ jobs:
       - uses: fossas/fossa-action@godeepakm/add-project-flag
         id: fossa-analyze
         with:
-          api-key: ${{secrets.fossaApiKey}}
-          project: something-cool
+          api-key: ${{secrets.FOSSA_API_KEY}}
+          project: something-cool2023
 
       - name: Running FOSSA CLI test with json output
         run: |
