@@ -23,7 +23,7 @@ jobs:
         id: fossa-analyze
         with:
           api-key: ${{secrets.FOSSA_API_KEY}}
-          project: something-cool2023
+          project: 'something-cool2023'
 
       - name: Running FOSSA CLI test with json output
         run: |
